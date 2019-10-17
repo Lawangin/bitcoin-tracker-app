@@ -1,0 +1,25 @@
+.TrackerDisplay {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.TrackerBlock {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background: rgb(34,159,195);
+    background: linear-gradient(16deg, rgba(34,159,195,0.8547618876652223) 0%, rgba(253,187,45,1) 100%);
+    justify-self: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px #ccc;
+    border: 1px solid #eee;
+    width: 350px;
+    height: 200px;
+}
+
+@media (max-width: 700px) {
+    .TrackerBlock {
+        grid-row: 1 / 2;
+        margin-top: 10%;
+    }
+}

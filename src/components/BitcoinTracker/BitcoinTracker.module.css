@@ -1,0 +1,27 @@
+.BitcoinTracker {
+    margin: 0 auto;
+    padding: 16px 32px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: xx-large;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid #eee;
+}
+
+.Text {
+    padding: 16px 4px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: x-large;
+    color: white;
+}
+
+.Update {
+    font-family: sans-serif;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+}
