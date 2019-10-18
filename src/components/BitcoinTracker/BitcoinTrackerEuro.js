@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import classes from './BitcoinTracker.module.css';
+import classes from './BitcoinTrackerEuro.module.css';
 
-class BitcoinTracker extends Component {
+class BitcoinTrackerEuro extends Component {
     state = {
         tracker: null,
         lastUpdate: null
@@ -15,7 +15,7 @@ class BitcoinTracker extends Component {
             .then(response => {
                 update = response.data.time.updated;
                 // return setInterval(() => response.data.bpi.USD.rate, 5000);
-                return response.data.bpi.USD.rate;
+                return response.data.bpi.EUR.rate;
             })
             .then(rate => rate.slice(0, 8))
             .then(usdRate => this.setState({ tracker: usdRate, lastUpdate: update}))
@@ -30,7 +30,7 @@ class BitcoinTracker extends Component {
                     .then(response => {
                         update = response.data.time.updated;
                         // return setInterval(() => response.data.bpi.USD.rate, 5000);
-                        return response.data.bpi.USD.rate;
+                        return response.data.bpi.EUR.rate;
                     })
                     .then(rate => rate.slice(0, 8))
                     .then(usdRate => this.setState({ tracker: usdRate, lastUpdate: update}))
@@ -43,7 +43,7 @@ class BitcoinTracker extends Component {
         return (
             <React.Fragment>
                 <div className={classes.Text}>
-                    USD<br />
+                    EUR<br />
                     Bitcoin
                 </div>
                 <div className={classes.BitcoinTracker}>
@@ -57,4 +57,4 @@ class BitcoinTracker extends Component {
     }
 }
 
-export default BitcoinTracker;
+export default BitcoinTrackerEuro;

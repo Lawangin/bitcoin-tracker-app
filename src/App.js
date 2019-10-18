@@ -3,12 +3,15 @@ import Normalize from 'normalize.css/normalize.css'
 
 // import BitcoinTracker from "./components/BitcoinTracker/BitcoinTracker";
 import TrackerDisplay from './containers/TrackerDisplay/TrackerDisplay';
+import classes from './App.module.css';
 
 
 function App() {
   return (
     <div className={Normalize}>
-      <TrackerDisplay />
+      <div className={classes.App}>
+        <TrackerDisplay />
+      </div>
     </div>
   );
 }
