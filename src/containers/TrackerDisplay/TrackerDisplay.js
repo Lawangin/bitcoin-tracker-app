@@ -7,6 +7,7 @@ import BitcoinTrackerEuro from "../../components/BitcoinTracker/BitcoinTrackerEu
 const trackerDisplay = () => {
     return (
         <div className={classes.TrackerDisplay}>
+            <p className={classes.Text}>Bitcoin in USD and Euro Currency.<br />Updates Every Minute</p>
             <div className={classes.TrackerBlock}>
                 <BitcoinTracker />
             </div>

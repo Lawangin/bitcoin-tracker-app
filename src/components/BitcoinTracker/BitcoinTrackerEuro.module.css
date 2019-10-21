@@ -8,6 +8,8 @@
     color: white;
     background-color: rgba(255, 255, 255, 0.25);
     border: 1px solid #eee;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
 }
 
 .Text {
@@ -22,6 +24,6 @@
 .Update {
     font-family: sans-serif;
     color: white;
-    margin-top: 50px;
+    margin-top: 25px;
     text-align: center;
 }

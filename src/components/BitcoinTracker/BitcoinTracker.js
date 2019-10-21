@@ -40,6 +40,7 @@ class BitcoinTracker extends Component {
     }
 
     render () {
+        const now = Date().toString();
         return (
             <React.Fragment>
                 <div className={classes.Text}>
@@ -50,7 +51,7 @@ class BitcoinTracker extends Component {
                     ${this.state.tracker}
                 </div>
                 <div className={classes.Update}>
-                    Last Update: {this.state.lastUpdate}
+                    Last Update: {now}
                 </div>
             </React.Fragment>
         );
