@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bitcoin-tracker-app/precache-manifest.e918a0ef56da441d41b918dcc5069474.js"
+  "/bitcoin-tracker-app/precache-manifest.88870e4a096fde7d21793d73c2ef571b.js"
 );
 
 self.addEventListener('message', (event) => {
