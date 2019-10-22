@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/bitcoin-tracker-app/static/css/main.a932136c.chunk.css",
-    "main.js": "/bitcoin-tracker-app/static/js/main.26702d11.chunk.js",
-    "main.js.map": "/bitcoin-tracker-app/static/js/main.26702d11.chunk.js.map",
+    "main.js": "/bitcoin-tracker-app/static/js/main.5f53ad3d.chunk.js",
+    "main.js.map": "/bitcoin-tracker-app/static/js/main.5f53ad3d.chunk.js.map",
     "runtime-main.js": "/bitcoin-tracker-app/static/js/runtime-main.77a6a758.js",
     "runtime-main.js.map": "/bitcoin-tracker-app/static/js/runtime-main.77a6a758.js.map",
     "static/css/2.764ccc25.chunk.css": "/bitcoin-tracker-app/static/css/2.764ccc25.chunk.css",
     "static/js/2.aa221e57.chunk.js": "/bitcoin-tracker-app/static/js/2.aa221e57.chunk.js",
     "static/js/2.aa221e57.chunk.js.map": "/bitcoin-tracker-app/static/js/2.aa221e57.chunk.js.map",
     "index.html": "/bitcoin-tracker-app/index.html",
-    "precache-manifest.88870e4a096fde7d21793d73c2ef571b.js": "/bitcoin-tracker-app/precache-manifest.88870e4a096fde7d21793d73c2ef571b.js",
+    "precache-manifest.b86d3c895a060c14a06576cfdaa90200.js": "/bitcoin-tracker-app/precache-manifest.b86d3c895a060c14a06576cfdaa90200.js",
     "service-worker.js": "/bitcoin-tracker-app/service-worker.js",
     "static/css/2.764ccc25.chunk.css.map": "/bitcoin-tracker-app/static/css/2.764ccc25.chunk.css.map",
     "static/css/main.a932136c.chunk.css.map": "/bitcoin-tracker-app/static/css/main.a932136c.chunk.css.map"
@@ -19,6 +19,6 @@
     "static/css/2.764ccc25.chunk.css",
     "static/js/2.aa221e57.chunk.js",
     "static/css/main.a932136c.chunk.css",
-    "static/js/main.26702d11.chunk.js"
+    "static/js/main.5f53ad3d.chunk.js"
   ]
 }

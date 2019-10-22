@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1f354f7df88d373e29aaecb7f5b04d95",
+    "revision": "f793abd817cb9dec99f0c5fa80220f1c",
     "url": "/bitcoin-tracker-app/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bitcoin-tracker-app/static/css/2.764ccc25.chunk.css"
   },
   {
-    "revision": "501a9fad661656b0e10c",
+    "revision": "babf4f0b6d72177c36d0",
     "url": "/bitcoin-tracker-app/static/css/main.a932136c.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/bitcoin-tracker-app/static/js/2.aa221e57.chunk.js"
   },
   {
-    "revision": "501a9fad661656b0e10c",
-    "url": "/bitcoin-tracker-app/static/js/main.26702d11.chunk.js"
+    "revision": "babf4f0b6d72177c36d0",
+    "url": "/bitcoin-tracker-app/static/js/main.5f53ad3d.chunk.js"
   },
   {
     "revision": "d0288bfcb19c329a00ac",
