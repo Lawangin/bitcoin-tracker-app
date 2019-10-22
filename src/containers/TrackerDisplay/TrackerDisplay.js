@@ -27,7 +27,7 @@ class TrackerDisplay extends Component {
         return (
             <div className={classes.TrackerDisplay}>
                 <div className={classes.Cockpit}>
-                    <p>Bitcoin in USD and Euro Currency.<br />Updates Every Minute</p>
+                    <p>Bitcoin in USD and Euro Currency.<br /></p>
                     <label> Select update timer:
                         <select className={classes.Select} value={this.state.value} onChange={this.changeHandler}>
                             <option value={timer.oneSec}>One Second</option>
