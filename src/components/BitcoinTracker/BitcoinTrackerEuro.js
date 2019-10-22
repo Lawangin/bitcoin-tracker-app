@@ -10,22 +10,29 @@ class BitcoinTrackerEuro extends Component {
     };
 
     componentDidMount() {
-        let update = null;
-        axios.get('https://api.coindesk.com/v1/bpi/currentprice.json')
-            .then(response => {
-                update = response.data.time.updated;
-                // return setInterval(() => response.data.bpi.USD.rate, 5000);
-                return response.data.bpi.EUR.rate;
-            })
-            .then(rate => rate.slice(0, 8))
-            .then(usdRate => this.setState({ tracker: usdRate, lastUpdate: update}))
-            .catch(err => console.log(err));
+        let timer = Number(this.props.setValue);
+        const getApiInfo = () => {
+            let update = null;
+            axios.get('https://api.coindesk.com/v1/bpi/currentprice.json')
+                .then(response => {
+                    update = response.data.time.updated;
+                    // return setInterval(() => response.data.bpi.USD.rate, 5000);
+                    return response.data.bpi.EUR.rate;
+                })
+                .then(rate => rate.slice(0, 8))
+                .then(eurRate => this.setState({ tracker: eurRate, lastUpdate: update}))
+                .catch(err => console.log(err));
+        };
+        getApiInfo();
+        this.firstInterval = setInterval(getApiInfo, Number(timer));
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
-        if (prevState.tracker !== this.state.tracker) {
-            setInterval(() => {
-                let update;
+        if (prevProps.setValue !== this.props.setValue && this.state.tracker !== null) {
+            clearInterval(this.firstInterval);
+            let timer = Number(this.props.setValue);
+            const getApiInfo = () => {
+                let update = null;
                 axios.get('https://api.coindesk.com/v1/bpi/currentprice.json')
                     .then(response => {
                         update = response.data.time.updated;
@@ -33,14 +40,16 @@ class BitcoinTrackerEuro extends Component {
                         return response.data.bpi.EUR.rate;
                     })
                     .then(rate => rate.slice(0, 8))
-                    .then(usdRate => this.setState({ tracker: usdRate, lastUpdate: update}))
+                    .then(eurRate => this.setState({ tracker: eurRate, lastUpdate: update}))
                     .catch(err => console.log(err));
-            }, 60000);
+            };
+            getApiInfo();
+            this.firstInterval = setInterval(getApiInfo, Number(timer));
         }
     }
 
     render () {
-        const now = Date().toString();
+        const now = new Date().toLocaleTimeString();
         return (
             <React.Fragment>
                 <div className={classes.Text}>
